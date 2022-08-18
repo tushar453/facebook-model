@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  body{
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      background-color: rgb(235, 229, 270);
+      font-family: Arial, Helvetica, sans-serif;
+      flex-wrap: wrapW  ;
+      display: block;
+  }
+  header{
+      width: 100%;
+      background-color: #2b5998;
+      /* height: 100px; */
+      background-image: linear-gradient(#4e69a2,#3b5998 50%);
+      border-bottom: 1px solid #133783 ;
+      display: flex;
+      justify-content: space-around;
+         flex-wrap: wrap;
+      padding: 0.6em;
+  }
+  
+ header > a{
+     color:white ;
+     text-decoration:none ;
+ }
+ #brand{
+     font-size: 230%;
+     align-self: center;
+     font-weight: bold;
+ }
+ #forgot{
+     color: white;
+     text-decoration:none ;
+
+ }
+ #forgot:hover{
+     color: tan;
+ }
+ header > form{
+     color: whitesmoke;
+     margin-left: 35%;
+flex-wrap: wrap-reverse;
+ }
+ header form ul{
+     display: flex;
+     flex-direction: row;
+     list-style-type: none;
+     padding: 0;
+     margin-bottom: 0;
+    
+
+ }
+ header form li{
+     align-self: flex-start;
+     padding: 0.2em 0.5em;
+     
+
+ }
+ header form input{
+     margin-bottom: 0.8em;
+     height: 18px;
+
+ }
+ header form input[type="submit"]{
+     background-color: #4267b2;
+     border: 1px solid #08298A;
+     color: white;
+     font-weight: bold;
+     margin-top: 35%;
+     height: 24px;
+     
+ }
+ header form input[type="submit"]:hover{
+     cursor: pointer;
+     background-color: black;
+ }
+ #birth{
+     font-weight: lighter;
+     font-size: 14px;
+ }
+ #vishal:hover{
+     cursor: pointer;
+    color: grey;
+ }
+ main{
+     display: flex;
+ }
+ .section{
+     flex-grow: grow;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+ }
+ #left-title{color: #0e385f;
+line-height: 29px;
+font-weight: bold;
+white-space: normal;
+ }
+ #right-section{
+     align-self: flex-start;
+ }
+    </style>
+</head>
+
+    <header class="container-fluid">
+        <a href="login.html" id="brand">facebook</a>
+        <form action="mailto:21bph048@nith.ac.in" method="post">
+        <ul>
+        <li>Email or phone<br> <input type="email"  placeholder="enter your Email or phone" required></li>
+        <li>Password <br></r><input type="password"  placeholder="enter your password" required><br><a href="#" id="forgot">Forgotten Account?</a></li>
+         
+       
+             
+        <li><input type="submit" name="login" value="login"></li>
+           
+        </ul> 
+            
+    
+    
+    
+    </form>
+    </header>
+   <main>
+      <div class="section">
+          <h3 class="left-title">facebook helps you to connect and share with <br> people in your life</h3>
+      </div>
+      <div class="section" style="margin-left: 200px;">
+          <div id="right-section">
+         <h1>Create an account</h1>
+         <h3>it's simple and easy</h3>
+         <form action="mailto:21bph048@nith.ac.in" method="post">
+            <input type="text" placeholder="First name" style="height: 20px;">
+            <input type="text" placeholder="Surname" style="height: 20px;"><br>
+            <br>
+            <input type="email" placeholder="Mobile number or email address " style="width: 300px; height: 20px;" ><br><br>
+            <input type="password" placeholder="New password" style="width: 300px; height: 20px;" >
+            <br><br>
+            <label for="date" id="birth">Birthday</label>
+            <br>
+            <input type="date" id="date">
+            <br><br>
+            Gender: <br> <br>
+            <input type="radio" value="male" name="gender" id="gender-m"> 
+            <label for="gender-m">male</label>
+            <input type="radio" value="female" name="gender" id="gender-f">
+            <label for="gender-f">female</label>
+            
+            <p>
+            By clicking sign up.You agree to our <a href="">terms and data policy</a> and <a href="">cookies policy</a>.<br>You may 
+            receive SMS notification from us and can opt at any time
+            </p>
+            <input type="submit" placeholder="sign up" id="vishal" style="background-color: green; color: white; width: 70px; border: 2px green; border-radius: 5px;
+            width: 90px; height: 30px;">
+            </form>
+            
+          </div>
+      </div>
+
+       </div>
+   </main>
+<body>
+</body>
+</html>
